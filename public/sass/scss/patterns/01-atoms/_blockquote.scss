@@ -1,0 +1,56 @@
+.blockquote {
+  margin: 0 0 30px 0;
+  &.align--left {
+    margin-right: 36px;
+  }
+  &.align--right {
+    margin-left: 36px;
+  }
+  background-color: #E6E6E6;
+  padding: 30px 20px 30px 30px;
+
+  &--content {
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    position: relative;
+    &:before {
+     content: "\201C";
+      display: block;
+      left: -15px;
+      position: absolute;
+    }
+    &:after {
+      content: "\201D";
+    }
+  }
+  &--title,
+  &--source {
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  &--title {
+    font-weight: 700;
+  }
+}
+
+.blockquote--orange {
+  box-shadow: 10px 10px $ucsf-orange;
+}
+.blockquote--green {
+  box-shadow: 10px 10px $ucsf-green;
+}
+.blockquote--blue {
+  box-shadow: 10px 10px $ucsf-blue;
+}
+.blockquote--teal {
+  box-shadow: 10px 10px $ucsf-teal;
+}
+.blockquote--navyblue {
+  box-shadow: 10px 10px $ucsf-navyblue;
+}
+
+.blockquote-container {
+  margin-top: 20px;
+}

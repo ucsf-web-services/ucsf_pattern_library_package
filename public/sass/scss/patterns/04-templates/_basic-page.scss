@@ -1,0 +1,49 @@
+.basic-page {
+  .main {
+    & > div {
+      margin-bottom: 40px;
+    }
+    margin-bottom: 2em;
+    @include breakpoint($display_medium_up) {
+      @include grid-span(8, 1, (12));
+      @include add-gutter(10em);
+      padding-left: 0;
+    }
+  }
+  .sidebar {
+    margin-bottom: 2em;
+    @include breakpoint($display_medium_up) {
+      @include grid-span(4, 9, (12));
+      @include add-gutter(10em);
+      padding-right: 0;
+      h1, h2, h3, h4, h5, h6 {
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+section {
+  display: block;
+  clear: both;
+  margin-bottom: 3rem;
+  &.header {
+    h1 {
+      margin: 0 auto 20px auto;
+      padding: 0;
+    }
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  & .subsection {
+    margin-top: 27px;
+  }
+}
+
+//Page Overrides
+.profile-page {
+  .featured-publications {
+    margin-top: 50px;
+  }
+}

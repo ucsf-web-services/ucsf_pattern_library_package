@@ -1,0 +1,75 @@
+.accordion-2 {
+  button.js-accordion__header {
+    background-color: $white;
+    color: $ucsf-blue;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: -1px;
+    margin-top:0;
+    display: block;
+    border-radius: 3px;
+    border-top: 2px solid $border-gray;
+    border-right: 2px solid $border-gray;
+    border-left: 2px solid $border-gray;
+    border-bottom: none;
+    cursor: pointer;
+    &:last-of-type {
+      border-bottom: 2px solid $border-gray;
+    }
+  }
+  .js-accordion__header {
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: $font-helvetica-neue;
+    position: relative;
+    &::after {
+      font-family: "FontAwesome";
+      font-size: 25px;
+      opacity: 1;
+      line-height: 25px;
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      content: "\f055";
+      transition: transform 0.3s ease-in-out;
+    }
+    &[aria-expanded="true"] {
+      color: $white;
+      background-color: $ucsf-blue;
+      border: 0;
+      border-top: 2px solid $ucsf-blue;
+      border-right: 2px solid $ucsf-blue;
+      border-left: 2px solid $ucsf-blue;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      &:last-of-type {
+        border-bottom: 2px solid $ucsf-blue;
+      }
+      &::after {
+        content: "\f055";
+        transform: rotate(-225deg);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+  }
+
+  .js-accordion__panel {
+    padding: .5em 1em;
+    border: 2px solid $ucsf-blue;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    p {
+      padding-left: 0;
+    }
+    &[aria-hidden=true] {
+      display: none;
+    }
+    &[role="tabpanel"] .js-accordion__header {
+      display: none;
+    }
+  }
+
+}

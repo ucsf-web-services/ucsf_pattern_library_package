@@ -1,0 +1,16 @@
+
+ul.footer-menu__links {
+  column-count: 1;
+  @include breakpoint($display_medium_up) {
+    column-count: 3;
+  }
+  list-style: none;
+  margin-left: 0;
+}
+
+.three-col ul.footer-menu__links {
+  column-count: 1;
+  @include breakpoint($display_medium_up) {
+    column-count: 2;
+  }
+}

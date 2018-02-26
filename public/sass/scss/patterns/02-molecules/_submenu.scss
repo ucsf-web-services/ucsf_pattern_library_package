@@ -1,0 +1,28 @@
+.submenu {
+  display: block;
+  @include breakpoint($display_medium_up) {
+    float: left;
+  }
+  li {
+    list-style: none;
+    float: left;
+    background-color: $background-gray;
+    margin: 0;
+    border-bottom: 1px solid #B4B9BF;
+    &.last {
+      border-bottom:none;
+    }
+    a {
+      color: $ucsf-navyblue;
+      display: inline-block;
+      padding: 15px 20px 15px 30px;
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      &:hover {
+        background-color: #DFE0E0;
+        border: 0px;
+      }
+    }
+  }
+}

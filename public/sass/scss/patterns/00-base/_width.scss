@@ -1,0 +1,30 @@
+.width-one-fourth {
+  @include breakpoint($display_medium_up) {
+    width: 25%;
+  }
+}
+.width-one-third {
+  @include breakpoint($display_medium_up) {
+    width: 33%;
+  }
+}
+.width-half {
+  @include breakpoint($display_medium_up) {
+    width: 50%;
+  }
+}
+.width-two-third {
+  @include breakpoint($display_medium_up) {
+    width: 66%;
+  }
+}
+.width-three-fourth {
+  @include breakpoint($display_medium_up) {
+    width: 75%;
+  }
+}
+.width-two-fifth {
+  @include breakpoint($display_medium_up) {
+    width: 40%;
+  }
+}

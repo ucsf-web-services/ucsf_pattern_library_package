@@ -1,0 +1,38 @@
+
+.font-helvetica-neue {
+  font-family: $font-helvetica-neue;
+}
+
+p, body {
+  font-family: $font-helvetica-neue;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-granjon {
+  font-family: $font-granjon;
+}
+
+.font-granjon-bold {
+  font-family:"Granjon LT W01 Bold", "Granjon LT W01 Roman", Garamond, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.font-helvetica-neue-light{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+.font-helvetica-neue-medium {
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.font-helvetica-neue-roman {
+  font-family: "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Arial", sans-serif;
+}
+
+.font-arial {
+ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.font-garamond {
+ font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+}

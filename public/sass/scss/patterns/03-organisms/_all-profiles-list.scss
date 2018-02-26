@@ -1,0 +1,25 @@
+
+.all-profiles-list {
+  .all-profiles-list__col {
+    width: 100%;
+    @include breakpoint($display_small_up) {
+      width: 49%;
+    }
+    @include breakpoint($display_medium_up) {
+      width: 31%;
+      &.four-grid {
+        width: 31%;
+      }
+    }
+    @include breakpoint($display_960_up) {
+      &.four-grid {
+        width: 24%;
+      }
+    }
+    clear: none;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+}

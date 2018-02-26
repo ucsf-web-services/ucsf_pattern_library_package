@@ -1,0 +1,34 @@
+img {
+  max-width: 100%;
+}
+
+a img {
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+// This is necessary so images are always viewable.
+body {
+  max-width: 100%;
+}
+
+#logo {
+  img {
+    width: auto;
+    vertical-align: middle;
+    margin: 20px 0;
+    max-width: 240px;
+    max-height: 111px;
+    @include breakpoint($display_medium_portrait_up) {
+      max-width: 300px;
+      margin: 0;
+    }
+    @include breakpoint($display_medium_up) {
+      max-width: 332px;
+      margin: 0;
+    }
+  }
+}
+

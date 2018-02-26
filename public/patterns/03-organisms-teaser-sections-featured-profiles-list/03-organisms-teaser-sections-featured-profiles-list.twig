@@ -1,29 +1,11 @@
-<div class="featured-profiles-list three-col">
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-card" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-short-teaser" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-card" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-short-teaser" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-short-teaser" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-card" %}
-  </div>
-  <div class="featured-profiles-list__col ">
-    {% include "molecules-profile-short-teaser" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-short-teaser" %}
-  </div>
-  <div class="featured-profiles-list__col">
-    {% include "molecules-profile-short-teaser" %}
-  </div>
+
+<div class="featured-profiles-list">
+    <div class="featured-profiles-list__heading">
+        <h2>Featured Profiles</h2>
+    </div>
+    {% for profile in profiles %}
+        <div class="row featured-profiles-list__item clearfix">
+            {% include "molecules-profile-teaser" with profile %}
+        </div>
+    {% endfor %}
 </div>

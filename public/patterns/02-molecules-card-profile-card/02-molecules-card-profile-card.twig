@@ -1,8 +1,10 @@
-<div class="profile-card">
-  {% include "atoms-profile-image-large" %}
+<div class ="profile-card">
+  <div class="profile-card__image">
+    {% include "atoms-profile-image-large" %}
+  </div>
   <div class="profile-card__detail">
-    <h4 class="font-helvetica-neue-light"><a href="#">Firstname Lastname</a></h4>
-    <p class="font-helvetica-neue-light">Designation / Job Title</p>
-    <p class="font-helvetica-neue-light">Primary Department / School Information</p>
+    <h3 class="profile-card__name"><a href="#">{{ text.profile.name }}</a></h3>
+    <p class="profile-card__title">{{ text.profile.title }}</p>
+    <p class="profile-card__department">{{ text.profile.info }}</p>
   </div>
 </div>

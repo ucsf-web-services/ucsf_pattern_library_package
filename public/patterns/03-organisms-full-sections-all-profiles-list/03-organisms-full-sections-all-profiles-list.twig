@@ -1,11 +1,13 @@
-<div class="all-profiles-list">
-  <div class="row all-profiles-list__item clearfix">
-    {% include "molecules-profile-teaser" %}
-  </div>
-  <div class="row all-profiles-list__item clearfix">
-    {% include "molecules-profile-teaser" %}
-  </div>
-  <div class="row all-profiles-list__item clearfix">
-    {% include "molecules-profile-teaser" %}
-  </div>
+{% if sidebar %}
+    {% set layout = "three-grid" %}
+{% else %}
+    {% set layout = "four-grid" %}
+{% endif %}
+<div class="all-profiles-list three-col">
+    {% for profile in profiles %}
+        <div class="all-profiles-list__col {{ layout }}">
+            {% include "molecules-profile-card" %}
+        </div>
+    {% endfor %}
 </div>
+

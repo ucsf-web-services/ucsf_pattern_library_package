@@ -1,0 +1,19 @@
+.profile-card {
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint($display_small_up) {
+    margin: 0;
+    margin-right: 3%;
+  }
+  .profile-card__detail {
+    margin-top: 20px;
+    .profile-card__name {
+      margin-top: 0;
+    }
+     .profile-card__title, .profile-card__department {
+      margin: 0px;
+      color: $darkdarkgray;
+    }
+  }
+}

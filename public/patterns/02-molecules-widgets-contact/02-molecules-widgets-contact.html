@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../../css/style.css?1519624938" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1519624938" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1519624938" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1519624938" media="all" />
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="body regular-margins">
+
+<div class="contact-widget">
+    <h3 class="contact-widget__header">Contact Us</h3>
+    <div class="contact-widget__social-media-links">
+        <a href="#"><i class="fa fa-facebook facebook-share" aria-hidden="true" title="Share on Facebook"></i> <span class="text-indent">Facebook</span></a>
+        <a href="#"><i class="fa fa-twitter twitter-share" aria-hidden="true" title="Share on Twitter"></i> <span class="text-indent">Twitter</span></a>
+        <a href="#"><i class="fa fa-youtube-play youtube-link" aria-hidden="true" title= "youtube"> <span class="text-indent">YouTube</span></i></a>
+    </div>
+    <p class="contact-widget__address">2330 Post St #420, San Francisco, California 94115, United States</p>
+    <div class="contact-widget__contact">
+      <p class="contact-widget__phone">Phone: (415) 476-7500</p>
+      <p class="contact-widget__fax">Fax: (415) 502-6361</p>
+    </div>
+</div>
+
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"lineage":[],"lineageR":[{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/03-organisms-global-footer\/03-organisms-global-footer.html"}],"patternBreadcrumb":{"patternType":"molecules","patternSubtype":"widgets"},"patternDesc":"<hr \/>\n\n<h2>state: complete<\/h2>\n\n<h3>Description<\/h3>\n\n<p>Contact widget<\/p>\n\n<h3>Usage<\/h3>\n\n<p>Can be used in the sidebar or footer.<\/p>\n\n<h3>Accessibility Considerations<\/h3>\n\n<p>For screen readers, links should make sense out of context. Place the distinguishing information of links at the beginning of a link. Please ensure accessibility by testing the whole page, including this element, in context.<\/p>\n\n<ul>\n<li>About link accessibility properties: http:\/\/webaim.org\/techniques\/hypertext\/<\/li>\n<\/ul>\n\n<p>Images must have text alternatives that describe the information or function represented by them. Be sure to specify the type of image. Please ensure accessibility by testing the whole page, including this element, in context.<\/p>\n\n<ul>\n<li>About image accessibility properties: https:\/\/www.w3.org\/WAI\/tutorials\/images\/<\/li>\n<\/ul>\n\n<p>Button color contrast and font size is important. The button description should be descriptive. Be sure to specify the type of button (button, reset, submit). Please ensure accessibility by testing the whole page, including this element, in context.<\/p>\n\n<ul>\n<li>About button accessibility properties: http:\/\/webaim.org\/techniques\/forms\/controls<\/li>\n<li>About button markup: https:\/\/www.w3schools.com\/tags\/tag_button.asp<\/li>\n<\/ul>\n\n<h3>SEO Considerations<\/h3>\n\n<p>This section is left intentionally blank and is for future consideration.<\/p>\n\n<h3>Technical Considerations<\/h3>\n\n<p>Anything special technical-wise will be shared here.<\/p>","patternExtension":"twig","patternName":"Contact","patternPartial":"molecules-contact","patternState":"","extraOutput":[]}
+</script>
+
+<script>
+  /*!
+  * scriptLoader - v0.1
+  *
+  * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+  * Licensed under the MIT license
+  *
+  */
+  
+  var scriptLoader = {
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1519624938">
+  (function() {
+    if (self != top) {
+      var cb = '1519624938';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1519624938">
+  (function() {
+    if (self != top) {
+      var cb = '1519624938';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+  <script src="../../js/script.js"></script>
+  </body>
+</html>

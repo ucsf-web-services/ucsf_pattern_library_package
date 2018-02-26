@@ -1,0 +1,137 @@
+.slider_wrapper__hero-5 {
+  background-color: $darkergray;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  max-height: none;
+  @include breakpoint($display_medium_up) {
+    max-height: 500px;
+    @include clearfix;
+    margin-top: 0;
+  }
+}
+
+.slider__hero-5 {
+
+
+  max-height: 500px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  .slick-prev {
+    left: 30px;
+  }
+  .slick-next {
+    right: 30px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+    @include breakpoint($display_medium_up) {
+      display: inline-block !important;
+    }
+    top: 50%;
+    margin-top: -25px;
+  }
+}
+
+
+.hero-5 {
+
+  position: relative;
+  height: 385px;
+  background-position: center center;
+  @include breakpoint($display_medium_up) {
+    min-height: 500px;
+    height: 500px;
+  }
+  &__image {
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      right: 0;
+      max-height: 500px;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+    }
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &__image_background {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 385px;
+    @include breakpoint($display_medium_up) {
+      height: 500px;
+    }
+  }
+  &__text {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    z-index: 22;
+    color: white;
+    position: absolute;
+    max-height: 500px;
+    padding: 60px 0;
+    max-width: 617px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    h2 {
+      font-size: 30px;
+      @include breakpoint($display_medium_up) {
+        font-size: 50px;
+      }
+      margin: 0 auto 10px;
+    }
+  }
+  & .btn-3__hero-5 {
+    @extend .btn-3;
+    &:hover {
+      color: $ucsf-navyblue;
+    }
+  }
+  .hero__button a {
+    background: $white;
+    color: $ucsf-navyblue;
+    &:hover {
+      background: $ucsf-blue;
+      color: $white;
+    }
+  }
+}
+
+
+//// Hero 5
+//.slick-slider.slider__hero-5 {
+//  margin-left: -20px;
+//  margin-right: -20px;
+//  @include breakpoint($display_medium_min) {
+//    margin-left: -50px;
+//    margin-right: -50px;
+//  }
+//  .slick-prev {
+//    left: 2%;
+//    display: none!important;
+//  }
+//  .slick-next {
+//    right: 2%;
+//    display: none!important;
+//  }
+//  @include breakpoint($display_medium_min) {
+//    .slick-prev {
+//      display: block!important;
+//    }
+//    .slick-next {
+//      display: block!important;
+//    }
+//  }
+//}

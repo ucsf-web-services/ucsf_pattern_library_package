@@ -1,0 +1,61 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1em 0 1em 0;
+  caption {
+    font-size: 1.4em;
+    text-align: left;
+  }
+  td, th {
+    padding: 12px;
+    text-align: left;
+  }
+  thead {
+    th {
+      background: $ucsf-blue;
+      color: $white;
+      border-color: $ucsf-blue;
+      font-weight: 500;
+      font-size: 1.1em;
+    }
+  }
+  tbody {
+    td {
+      border: 1px $darkgray solid;
+    }
+  }
+  tr:nth-child(even) {
+    background: $background-gray;
+  }
+  tr {
+    &:hover {
+      background: $ucsf-lightyellow;
+    }
+  }
+}
+
+.table--no-row-color {
+  tr:nth-child(even) {
+    background: none;
+  }
+}
+
+.table--condensed {
+  tr:nth-child(even) {
+    background: none;
+  }
+  thead {
+    th {
+      background: none;
+      color: $black;
+    }
+  }
+  td, th {
+    border: none;
+    border-bottom: 1px $darkgray solid;
+  }
+  tfoot td {
+    border-bottom: none;
+  }
+}

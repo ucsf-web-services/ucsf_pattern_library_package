@@ -1,0 +1,25 @@
+
+.featured-profiles-list {
+  .featured-profiles-list__heading {
+    border-bottom: 2px solid $secondary-color;
+    margin-bottom: 30px;
+    padding-bottom: 4px;
+    h2 {
+      @extend .font-helvetica-neue;
+      font-weight: 300;
+      font-size: 29px;
+      line-height: 1.1;
+      margin: 0;
+    }
+  }
+  .featured-profiles-list__item {
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    border-bottom: 1px solid $darkgray;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+}

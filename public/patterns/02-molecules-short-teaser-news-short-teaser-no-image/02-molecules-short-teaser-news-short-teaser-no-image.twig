@@ -1,6 +1,6 @@
 <div class="news-short-teaser">
   <div class="news-short-teaser__detail">
     <p>{% include "atoms-date" %}</p>
-    <h3><a href="#">Lorem ipsum dolor sit amet consec tetur adipiscing elsed do eiusmod tempor.</a></h3>
+    <h3>{% if(text.news.link) %}{{ html.a(text.news.link) }}{% else %}{{ text.news.title }}{% endif %}</h3>
   </div>
 </div>

@@ -1,0 +1,32 @@
+
+@import "variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  max-width: 1320px;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  @include breakpoint($display_medium_up) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.align--left {
+  float: left;
+}
+
+.align--right {
+  float: right;
+}
+
+.text-indent {
+  display: inline-block;
+  text-indent: -99999px;
+}

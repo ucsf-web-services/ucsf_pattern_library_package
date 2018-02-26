@@ -1,0 +1,28 @@
+.multiple-element-sidebar__section {
+  .multiple-element-sidebar__section-item {
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $background-gray;
+    .sidebar-bg-gray & {
+      border-bottom: 1px solid $darkgray;
+    }
+    &.multiple-element-sidebar__section-item-last {
+      border-bottom: none;
+    }
+    &:last-child {
+      //border: none;
+      padding-bottom: 0;
+    }
+    &.multiple-element-sidebar__section-item-last-mid {
+      border-bottom: 5px solid $secondary-color;
+      padding-bottom: 32px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+h2.multiple-element-sidebar__section_title {
+  font-weight: 300;
+  font-size: 29px;
+  line-height: 1.1;
+}

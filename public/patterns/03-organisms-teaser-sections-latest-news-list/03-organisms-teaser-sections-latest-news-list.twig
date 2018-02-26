@@ -1,18 +1,19 @@
+{% if sidebar %}
+    {% set layout = "grid" %}
+{% else %}
+    {% set layout = "" %}
+    {% set offset = -1 %}
+{% endif %}
 <div class="latest-news-list clearfix">
-  <div class="latest-news-list__heading">
-    <h2 class="font-helvetica-neue-light">UCSF News</h2>
-    <a href="#" class="btn-2" name="See More" type="button">SEE MORE</a>
-  </div>
-  <div class="latest-news-list__item clearfix">
-    {% include "molecules-news-short-teaser-no-image" %}
-  </div>
-  <div class="latest-news-list__item clearfix">
-    {% include "molecules-news-short-teaser-no-image" %}
-  </div>
-  <div class="latest-news-list__item clearfix">
-    {% include "molecules-news-short-teaser-no-image" %}
-  </div>
-  <div class="latest-news-list__item clearfix">
-    {% include "molecules-news-short-teaser-no-image" %}
-  </div>
+    <div class= "latest-news-list__heading">
+      <h2>{{ news_listing.title }}</h2>
+        {% if news_listing.link %}
+            {{ html.a(news_listing.link) }}
+        {% endif %}
+    </div>
+    {% for teaser in news_listing.list[:offset] %}
+        <div class="latest-news-list__item {{ layout }}">
+            {% include "molecules-news-short-teaser" with teaser %}
+        </div>
+    {% endfor %}
 </div>

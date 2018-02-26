@@ -1,19 +1,43 @@
-<div class="lastest-events-list four-col">
-  <div class="lastest-events-list__heading">
-    <h2 class="font-helvetica-neue-light">Events</h2>
-    <a href="#" class="btn-2" name="See More" type="button">SEE MORE</a>
-  </div>
-  <div class="lastest-events-list__item four-col__left">
-    {% include "molecules-event-card" %}
-  </div>
-  <div class="lastest-events-list__item four-col__center-left">
-    {% include "molecules-event-card" %}
-  </div>
-  <div class="lastest-events-list__item four-col__center-right">
-    {% include "molecules-event-card" %}
-  </div>
-  <div class="lastest-events-list__item four-col__right">
-    {% include "molecules-event-card" %}
-  </div>
-</div>
+
+<div class="lastest-events-list">
+{% if sidebar %}
+    {% set grid = "threecol.twig" %}
+    {% set count = 3 %}
+{% else %}
+    {% set grid = "fourcol.twig" %}
+    {% set count = 4 %}
+{% endif %}
+{% embed grid %}
+    {% block title %}<div class="lastest-events-list__heading">{{ titles.h2(event_listing.title) }}</div>{% endblock %}
+    {% block colclass %}{% endblock %}
+    {% block left %}
+        {% if event_listing.list[0] is defined %}
+            {% include "molecules-event-card" with event_listing.list[0] only %}
+        {% endif %}
+    {% endblock %}
+    {% if count == 3 %}
+    {% block center %}
+        {% if event_listing.list[1] is defined %}
+            {% include "molecules-event-card" with event_listing.list[1] only %}
+        {% endif %}
+    {% endblock %}
+    {% else %}
+        {% block centerleft %}
+            {% if event_listing.list[1] is defined %}
+                {% include "molecules-event-card" with event_listing.list[1] only %}
+            {% endif %}
+        {% endblock %}
+        {% block centerright %}
+            {% if event_listing.list[2] is defined %}
+                {% include "molecules-event-card" with event_listing.list[2] only %}
+            {% endif %}
+        {% endblock %}
+    {% endif %}
+    {% block right %}
+        {% if count == 3 %}{% set final = 2 %}{% else %}{% set final = 3 %}{% endif %}
+        {% if event_listing.list[final] is defined %}
+            {% include "molecules-event-card" with event_listing.list[final] only %}
+        {% endif %}
+    {% endblock %}
+{% endembed %}
 </div>

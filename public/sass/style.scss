@@ -1,0 +1,26 @@
+//******* LIBRARY ELEMENTS *******//
+
+@import "breakpoint";
+@import "singularitygs";
+@import "singularitygs/helpers/clearfix";
+@import "font-awesome";
+@import "slick-theme";
+@import "slick";
+
+//******* GLOBAL ELEMENTS *******//
+
+@import "scss/base/*.scss";
+
+//****** CUSTOM CSS ************//
+
+@import "custom/*.scss";
+
+//******* ATOMIC ELEMENTS *******//
+
+@import "scss/patterns/**/*.scss";
+
+//****** VENDOR CSS ************//
+
+@import "vendor/responsive-nav.css";
+
+

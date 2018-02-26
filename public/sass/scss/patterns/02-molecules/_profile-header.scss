@@ -1,0 +1,31 @@
+.profile-header{
+  .profile-header__image {
+    float: left;
+    margin-right: 40px;
+  }
+  .profile-header__detail {
+    overflow: auto;
+    h4 {
+      @extend .font-helvetica-neue;
+      font-weight: 300;
+      font-size: 26px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+    p {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1.4;
+    }
+    & .profile-header__detail__contact {
+      margin-top: 8px;
+      p {
+        font-size: 16px;
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

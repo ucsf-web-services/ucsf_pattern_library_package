@@ -1,0 +1,22 @@
+.sidebar-general {
+  box-shadow: 0px 0px 4px 1px #E3E3E3;
+  -webkit-box-shadow: 0px 0px 4px 1px #E3E3E3;
+  -moz-box-shadow: 0px 0px 4px 1px #E3E3E3;
+  -o-box-shadow: 0px 0px 4px 1px #E3E3E3;
+  border-top: 15px solid $secondary-color;
+  border-bottom: 15px solid $secondary-color;
+  margin-bottom: 15px;
+  padding: 30px 30px 30px 30px;
+  margin-bottom: 50px;
+}
+
+.sidebar-container {
+  @extend .sidebar-general;
+}
+
+.sidebar-bg-white {
+  background-color: $white;
+}
+.sidebar-bg-gray {
+  background-color: $background-gray;
+}

@@ -1,0 +1,124 @@
+.vertical-tab {
+
+  h2.invisible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .vertical-tab__title {
+    display: inline-block;
+    float: left;
+    margin-left: 0;
+    li {
+      width: 15em;
+      list-style-type: none;
+      position: relative;
+      margin: auto 0;
+      outline: 0;
+      text-decoration: none;
+      line-height: 1.1em;
+      a {
+        background-color: $white;
+        padding: 1em;
+        cursor: pointer;
+        display: block;
+        border-left: 2px solid $border-gray;
+        border-bottom: 2px solid $border-gray;
+        color: $ucsf-blue;
+        &[aria-selected="true"] {
+          background-color: $ucsf-blue;
+          color: $white;
+          border-top: 2px solid $ucsf-blue;
+          border-left: 2px solid $ucsf-blue;
+          border-bottom: 2px solid $ucsf-blue;
+          margin-top: -2px;
+        }
+      }
+    }
+    li:first-child {
+      a {
+        border-top-left-radius: 3px;
+        border-top: 2px solid $border-gray;
+        &[aria-selected="true"] {
+          border-top-left-radius: 3px;
+          border-top: 2px solid $ucsf-blue;
+          margin-top: 0;
+        }
+      }
+    }
+    li:last-child {
+      a {
+        border-bottom-left-radius: 0;
+        @include breakpoint($display_medium_up) {
+          border-bottom-left-radius: 3px;
+        }
+      }
+    }
+  }
+  .vertical-tab__content {
+    margin-left: 0;
+    list-style: none;
+    border: 2px solid $ucsf-blue;
+    background-color: #FFF;
+    margin-left: 15em;
+    min-height: 15em;
+    position: relative;
+    padding: .5em 1em;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    li {
+      display:none;
+
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $display_medium_min) {
+  .vertical-tab {
+    .vertical-tab__title {
+      float: none;
+      width: 100%;
+      margin: 0;
+      li {
+        width: inherit;
+        a {
+          border-right: 2px solid $border-gray;
+          &:before {
+            content: "+";
+            margin-right: 10px;
+          }
+          &[aria-selected="true"] {
+            margin-left: 0;
+            border-right: 2px solid $ucsf-blue;
+            &:before {
+              content: "-";
+              margin-right: 10px;
+            }
+          }
+
+        }
+      }
+      li:first-child {
+        border-top-left-radius: 0;
+      }
+      li:last-child {
+        border-bottom: 0;
+      }
+    }
+    .vertical-tab__content {
+      margin-left: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

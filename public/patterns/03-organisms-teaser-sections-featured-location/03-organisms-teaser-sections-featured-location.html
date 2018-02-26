@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../../css/style.css?1519624938" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1519624938" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1519624938" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1519624938" media="all" />
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="body regular-margins">
+
+<div class="featured-location three-col">
+  <div class="featured-location-header three-col__two-thirds-left">
+    <h2 class="font-helvetica-neue-light">Find Us</h2>
+  </div>
+  <div class="featured-location-row three-col__two-thirds-left">
+    <div class="location-teaser clearfix">
+  <div class="location-teaser__image">
+    <a href="#"><img src="http://via.placeholder.com/444x296" alt="Location Image - Large" title="Location Image - Large"></a>
+  </div>
+  <div class="location-teaser__detail">
+    <h3 class="location-teaser__title">Office Location</h3>
+    <p class="location-teaser__address">2330 Post St #420, San Francisco, California 94115, United States</p>
+    <div class="location-teaser__contact">
+      <p class="location-teaser__phone">Appointments: (415) 476-7500</p>
+      <p class="location-teaser__fax">Fax: (415) 502-6361</p>
+    </div>
+    <p class="location-teaser__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam.</p>
+  </div>
+</div>
+  </div>
+  <div class="featured-location-row three-col__two-thirds-left">
+    <div class="location-teaser clearfix">
+  <div class="location-teaser__image">
+    <a href="#"><img src="http://via.placeholder.com/444x296" alt="Location Image - Large" title="Location Image - Large"></a>
+  </div>
+  <div class="location-teaser__detail">
+    <h3 class="location-teaser__title">Office Location</h3>
+    <p class="location-teaser__address">2330 Post St #420, San Francisco, California 94115, United States</p>
+    <div class="location-teaser__contact">
+      <p class="location-teaser__phone">Appointments: (415) 476-7500</p>
+      <p class="location-teaser__fax">Fax: (415) 502-6361</p>
+    </div>
+    <p class="location-teaser__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam.</p>
+  </div>
+</div>
+  </div>
+</div>
+
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"lineage":[{"lineagePattern":"molecules-location-teaser","lineagePath":"..\/..\/patterns\/03-organisms-teaser-sections-featured-location\/03-organisms-teaser-sections-featured-location.html"}],"lineageR":[{"lineagePattern":"templates-basic-page-iteration-2--template","lineagePath":"..\/..\/patterns\/04-templates-basic-page-_basic-page-iteration-2--template\/04-templates-basic-page-_basic-page-iteration-2--template.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"teaser sections"},"patternDesc":"<hr \/>\n\n<h2>state: complete<\/h2>\n\n<h3>Description<\/h3>\n\n<p>This is an example of a featured location list.<\/p>\n\n<h3>Usage<\/h3>\n\n<p>Featured locations are meant to highlight one or more locations. Use if you're encouraging people to come to one or more physical addresses.<\/p>\n\n<h3>Accessibility Considerations<\/h3>\n\n<p>Many concepts are communicated more effectively with the addition of illustrations, maps, charts, etc. Please ensure accessibility by testing the whole page, including this element, in context.<\/p>\n\n<ul>\n<li>About image accessibility properties: http:\/\/webaim.org\/techniques\/images\/<\/li>\n<\/ul>\n\n<h3>SEO Considerations<\/h3>\n\n<p>This section is left intentionally blank and is for future consideration.<\/p>\n\n<h3>Technical Considerations<\/h3>\n\n<p>Anything special technical-wise will be shared here.<\/p>","patternExtension":"twig","patternName":"Featured Location","patternPartial":"organisms-featured-location","patternState":"","extraOutput":[]}
+</script>
+
+<script>
+  /*!
+  * scriptLoader - v0.1
+  *
+  * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+  * Licensed under the MIT license
+  *
+  */
+  
+  var scriptLoader = {
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1519624938">
+  (function() {
+    if (self != top) {
+      var cb = '1519624938';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1519624938">
+  (function() {
+    if (self != top) {
+      var cb = '1519624938';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+  <script src="../../js/script.js"></script>
+  </body>
+</html>
