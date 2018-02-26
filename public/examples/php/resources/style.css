@@ -5407,7 +5407,7 @@ ul.footer-menu__links {
     width: 35px;
     font-size: 18px;
     border: none;
-    float: left;
+    float: right;
     cursor: pointer;
     background: transparent;
     z-index: 20;
@@ -5415,8 +5415,6 @@ ul.footer-menu__links {
     position: relative;
     text-indent: -9999px;
     margin-left: -30px; }
-    .search input#edit-submit--2::before {
-      content: "\f002"; }
   .search .fa-search:before {
     position: relative;
     top: 4px;

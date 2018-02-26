@@ -18,8 +18,7 @@
     width: 35px;
     font-size: 18px;
     border: none;
-    //margin-left: -35px;
-    float:left;
+    float:right;
     cursor: pointer;
     background: transparent;
     z-index: 20;
@@ -27,9 +26,6 @@
     position: relative;
     text-indent: -9999px;
     margin-left: -30px;
-    &::before {
-      content: "\f002";
-    }
   }
   .fa-search{
     &:before {
