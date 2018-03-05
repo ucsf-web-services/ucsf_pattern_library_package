@@ -11,8 +11,6 @@
 }
 
 .slider__hero-5 {
-
-
   max-height: 500px;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -39,7 +37,6 @@
 
 
 .hero-5 {
-
   position: relative;
   height: 385px;
   background-position: center center;
@@ -91,20 +88,6 @@
         font-size: 50px;
       }
       margin: 0 auto 10px;
-    }
-  }
-  & .btn-3__hero-5 {
-    @extend .btn-3;
-    &:hover {
-      color: $ucsf-navyblue;
-    }
-  }
-  .hero__button a {
-    background: $white;
-    color: $ucsf-navyblue;
-    &:hover {
-      background: $ucsf-blue;
-      color: $white;
     }
   }
 }

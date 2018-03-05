@@ -45,7 +45,7 @@
     top: 0;
     display: none;
     @include breakpoint($display_960_up) {
-      background-color: $primary-color;
+      background-color: $ucsf-navyblue;
       bottom: 25px;
       height: 475px;
       display: block;
@@ -121,7 +121,7 @@
     &::-webkit-scrollbar {
       display: none;
     }
-    background-color: $primary-color;
+    background-color: $ucsf-navyblue;
     position: static;
     display: block;
     float: left;
