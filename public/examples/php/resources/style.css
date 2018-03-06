@@ -4093,24 +4093,29 @@ table {
     float: left;
     width: 100%; }
     .contact-widget .contact-widget__contact p {
-      margin-top: 0; }
-      .contact-widget .contact-widget__contact p:first-child {
-        margin-bottom: 0px; }
-    .contact-widget .contact-widget__contact .contact-widget__phone::before, .contact-widget .contact-widget__contact .contact-widget__fax::before {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .contact-widget .contact-widget__contact p:last-child {
+        margin-bottom: 1em; }
+    .contact-widget .contact-widget__contact .contact-widget__phone::before, .contact-widget .contact-widget__contact .contact-widget__fax::before, .contact-widget .contact-widget__contact .contact-widget__email::before {
       font-family: "FontAwesome";
       content: "\f095";
       display: inline-block;
       margin-right: 5px; }
     .contact-widget .contact-widget__contact .contact-widget__fax::before {
       content: "\f1ac"; }
+    .contact-widget .contact-widget__contact .contact-widget__email::before {
+      content: "\f199"; }
 
 #footer .contact-widget__title {
   text-transform: uppercase;
   font-size: 22px;
   margin-top: 0; }
 
-#footer .contact-widget__phone, #footer .contact-widget__fax, #footer .contact-widget__social-media-links a {
+#footer .contact-widget__phone, #footer .contact-widget__fax, #footer .contact-widget__email, #footer .contact-widget__social-media-links {
   color: #D1D3D3; }
+  #footer .contact-widget__phone a, #footer .contact-widget__fax a, #footer .contact-widget__email a, #footer .contact-widget__social-media-links a {
+    color: #D1D3D3; }
 
 #footer .contact-widget__social-media-links a:hover {
   color: #FFF; }
