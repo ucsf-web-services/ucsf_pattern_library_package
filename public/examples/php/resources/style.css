@@ -4428,6 +4428,7 @@ ul.footer-menu__links {
   padding: 0;
   max-width: 1320px;
   margin: 0 auto;
+  line-height: 0;
   margin-bottom: 50px;
   position: relative; }
   @media (min-width: 769px) {
@@ -4675,7 +4676,8 @@ ul.footer-menu__links {
         left: 100px; } }
   @media (min-width: 0) and (max-width: 960px) {
     .hero-2__text-wrapper {
-      background-color: #052049; } }
+      background-color: #052049;
+      height: auto; } }
   @media (min-width: 960px) {
     .hero-2__text-wrapper {
       position: absolute;
@@ -4690,7 +4692,8 @@ ul.footer-menu__links {
   height: auto;
   margin: 0 auto;
   margin-bottom: 50px;
-  position: relative; }
+  position: relative;
+  line-height: 0; }
   @media (min-width: 960px) {
     .slider.slider__hero-3 {
       padding-left: 25px;
@@ -4753,12 +4756,7 @@ ul.footer-menu__links {
     z-index: 20;
     color: white;
     font-size: 15px;
-    font-weight: bold;
-    position: static;
-    bottom: 50px; }
-    @media (min-width: 769px) {
-      .slider.slider__hero-3 .paging-info {
-        position: absolute; } }
+    font-weight: bold; }
 
 .hero-3__top-image {
   max-height: 250px;
@@ -4915,7 +4913,7 @@ ul.footer-menu__links {
     height: 100%;
     top: 0px;
     background-color: #6EA400; }
-    @media (min-width: 769px) {
+    @media (min-width: 960px) {
       .slider__hero-4 .hero-4 .hero-4__text {
         position: absolute;
         width: 42%;
@@ -4925,16 +4923,10 @@ ul.footer-menu__links {
         padding-right: 30px;
         padding-top: 100px;
         padding-bottom: 35px; } }
-    .slider__hero-4 .hero-4 .hero-4__text > div {
-      overflow: auto;
-      height: 100%;
-      padding-bottom: 30px; }
-      .slider__hero-4 .hero-4 .hero-4__text > div::-webkit-scrollbar {
-        display: none; }
     .slider__hero-4 .hero-4 .hero-4__text h2 {
       margin-bottom: 10px;
       line-height: 1em; }
-      @media (min-width: 769px) {
+      @media (min-width: 960px) {
         .slider__hero-4 .hero-4 .hero-4__text h2 {
           font-size: 44px; } }
     .slider__hero-4 .hero-4 .hero-4__text p {
@@ -4942,11 +4934,12 @@ ul.footer-menu__links {
       font-size: 18px; }
   .slider__hero-4.slick-slider .slick-slide {
     min-height: 23px;
-    position: relative; }
+    position: relative;
+    line-height: 0; }
   .slider__hero-4.slick-slider .slick-prev,
   .slider__hero-4.slick-slider .slick-next {
     display: none !important; }
-    @media (min-width: 769px) {
+    @media (min-width: 960px) {
       .slider__hero-4.slick-slider .slick-prev,
       .slider__hero-4.slick-slider .slick-next {
         display: inline-block !important; } }
@@ -4978,19 +4971,23 @@ ul.footer-menu__links {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 50px; }
-  .slider__hero-5 .slick-prev {
+  .slider__hero-5.slider .slick-prev {
     left: 30px; }
-  .slider__hero-5 .slick-next {
+  .slider__hero-5.slider .slick-next {
     right: 30px; }
-  .slider__hero-5 .slick-prev,
-  .slider__hero-5 .slick-next {
+  .slider__hero-5.slider .slick-prev,
+  .slider__hero-5.slider .slick-next {
     display: none !important;
     top: 50%;
     margin-top: -25px; }
     @media (min-width: 769px) {
-      .slider__hero-5 .slick-prev,
-      .slider__hero-5 .slick-next {
-        display: inline-block !important; } }
+      .slider__hero-5.slider .slick-prev,
+      .slider__hero-5.slider .slick-next {
+        display: inline-block !important;
+        background: white; }
+        .slider__hero-5.slider .slick-prev::before,
+        .slider__hero-5.slider .slick-next::before {
+          color: red; } }
 
 .hero-5 {
   position: relative;
@@ -5121,15 +5118,16 @@ ul.footer-menu__links {
 
 .warning {
   background-color: #eaaf51;
-  border-color: #d99a36; }
+  border-color: #eaaf51;
+  color: #333; }
 
 .error {
-  background-color: #de4343;
+  background-color: #c43d3d;
   border-color: #c43d3d; }
 
 .status {
-  background-color: #61b832;
-  border-color: #55a12c; }
+  background-color: #448023;
+  border-color: #448023; }
 
 @-webkit-keyframes animate-bg {
   from {
@@ -5447,7 +5445,7 @@ ul.footer-menu__links {
 .social-media-links .fa-facebook,
 .social-media-links .fa-twitter,
 .social-media-links .fa-youtube {
-  text-indent: 40px; }
+  text-indent: -9999px; }
   .social-media-links .fa-facebook:before,
   .social-media-links .fa-twitter:before,
   .social-media-links .fa-youtube:before {
@@ -6149,3 +6147,6 @@ section {
     padding-left: 5em;
     padding-right: 5em;
     padding-left: 2em; } }
+
+.sg-pattern-extra-info {
+  color: #333 !important; }

@@ -18,20 +18,26 @@
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 50px;
-  .slick-prev {
-    left: 30px;
-  }
-  .slick-next {
-    right: 30px;
-  }
-  .slick-prev,
-  .slick-next {
-    display: none !important;
-    @include breakpoint($display_medium_up) {
-      display: inline-block !important;
+  &.slider {
+    .slick-prev {
+      left: 30px;
     }
-    top: 50%;
-    margin-top: -25px;
+    .slick-next {
+      right: 30px;
+    }
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+      @include breakpoint($display_medium_up) {
+        display: inline-block !important;
+        background: white;
+        &::before {
+          color: red;
+        }
+      }
+      top: 50%;
+      margin-top: -25px;
+    }
   }
 }
 
