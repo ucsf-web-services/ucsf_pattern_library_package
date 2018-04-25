@@ -32,7 +32,7 @@
         display: inline-block !important;
         background: white;
         &::before {
-          color: red;
+          color: $ucsf-blue;
         }
       }
       top: 50%;
