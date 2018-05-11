@@ -3903,7 +3903,7 @@ p {
   line-height: 1.5em;
   margin: 1em 0 1em 0; }
 
-p.bigger {
+.bigger, .featured-text {
   font-size: 1.2em;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Arial", sans-serif; }
 
@@ -5502,7 +5502,6 @@ ul.footer-menu__links {
       float: left; } }
   .submenu li {
     list-style: none;
-    float: left;
     background-color: #EFEFEF;
     margin: 0;
     border-bottom: 1px solid #B4B9BF; }
@@ -5511,7 +5510,7 @@ ul.footer-menu__links {
     .submenu li a {
       color: #052049;
       display: inline-block;
-      padding: 15px 20px 15px 30px;
+      padding: 15px 20px;
       margin: 0;
       width: 100%;
       text-align: left; }
