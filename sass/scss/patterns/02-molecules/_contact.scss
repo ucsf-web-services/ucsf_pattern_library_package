@@ -19,6 +19,9 @@
   .contact-widget__social-media-links {
     float:right;
     font-size: 20px;
+    a {
+      text-decoration: none;
+    }
     .fa-facebook {
       &:hover {
         color:#3C599F;
