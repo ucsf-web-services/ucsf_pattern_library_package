@@ -86,6 +86,9 @@
     color: $lightgray;
     a {
       color: $lightgray;
+      &:hover {
+        color: $white;
+      }
     }
   }
   .contact-widget__social-media-links a:hover {
