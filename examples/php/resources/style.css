@@ -2577,7 +2577,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  color: #333; }
+  color: #222; }
 
 .content-container {
   max-width: 1320px;
@@ -2623,7 +2623,7 @@ body {
 .accordion-1 .js-accordion__header {
   text-align: left;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Arial", sans-serif;
   position: relative; }
   .accordion-1 .js-accordion__header::after {
@@ -2685,7 +2685,7 @@ body {
 .accordion-2 .js-accordion__header {
   text-align: left;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Arial", sans-serif;
   position: relative; }
   .accordion-2 .js-accordion__header::after {
@@ -3291,7 +3291,8 @@ body {
       display: block;
       border-left: 2px solid #DDD;
       border-bottom: 2px solid #DDD;
-      color: #0071AD; }
+      color: #0071AD;
+      text-decoration: none; }
       .vertical-tab .vertical-tab__title li a[aria-selected="true"] {
         background-color: #0071AD;
         color: #FFF;
@@ -3833,9 +3834,57 @@ body {
       margin: 0; } }
 
 a {
-  color: #0071AD; }
+  color: #0071AD;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-skip: ink; }
   a:hover {
     text-decoration: none; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none; }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    text-decoration: underline; }
+
+a.border-link-one {
+  text-decoration: none;
+  border-bottom: 1px dashed #6EA400; }
+  a.border-link-one:hover {
+    border-bottom: 2px solid #6EA400; }
+
+a.border-link-two {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px dashed #0071AD; }
+  a.border-link-two::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0071AD;
+    transition: width .3s; }
+  a.border-link-two:hover {
+    border-bottom: 1px dashed transparent;
+    color: #222; }
+    a.border-link-two:hover::after {
+      width: 100%; }
+
+a.border-link-three {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px dotted #0071AD; }
+  a.border-link-three::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #6EA400;
+    transition: width .3s; }
+  a.border-link-three:hover {
+    border-bottom: 1px dotted transparent;
+    color: #222; }
+    a.border-link-three:hover::after {
+      width: 100%; }
 
 ul.text-list {
   margin-top: 20px;
@@ -4126,7 +4175,7 @@ table {
   margin-right: 3%;
   margin-bottom: 3%; }
   .event-card h3 {
-    font-size: 18px; }
+    font-size: 22px; }
   .event-card .event-card__image {
     display: none; }
     @media (min-width: 769px) {
@@ -4141,7 +4190,7 @@ table {
     -webkit-box-orient: vertical;
     overflow: hidden; }
   .event-card .event-card__date-time {
-    font-size: 15px;
+    font-size: 16px;
     display: inline-block;
     margin: 7px 0; }
     .event-card .event-card__date-time p {
@@ -4150,7 +4199,7 @@ table {
     margin: 0; }
 
 .event-teaser h3 {
-  font-size: 18px; }
+  font-size: 22px; }
 
 .event-teaser .event-teaser__image {
   display: none; }
@@ -4168,7 +4217,7 @@ table {
   overflow: hidden; }
 
 .event-teaser .event-teaser__date-time {
-  font-size: 15px;
+  font-size: 16px;
   display: inline-block;
   margin: 7px 0; }
   .event-teaser .event-teaser__date-time p {
@@ -5171,11 +5220,11 @@ ul.footer-menu__links {
     margin-bottom: 5px; }
   .news-short-teaser .news-short-teaser__detail time {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 5px; }
   .news-short-teaser .news-short-teaser__detail h3 {
     font-weight: 100;
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     overflow: hidden; }
     .news-short-teaser .news-short-teaser__detail h3 a {
@@ -5190,7 +5239,6 @@ ul.footer-menu__links {
     margin-right: 40px;
     float: left; }
   .news-teaser .news-teaser__detail h3 {
-    font-size: 25px;
     margin-bottom: 5px;
     margin-top: 0;
     font-weight: 300; }
@@ -5198,7 +5246,7 @@ ul.footer-menu__links {
     line-height: 1.5rem; }
   .news-teaser .news-teaser__detail .news-teaser__author-date {
     margin-bottom: 8px;
-    font-size: 15px; }
+    font-size: 16px; }
 
 @media only screen and (max-width: 769px) {
   .news-teaser .news-teaser__detail {
@@ -5315,7 +5363,7 @@ ul.footer-menu__links {
 .publication-teaser {
   margin-top: 30px; }
   .publication-teaser .publication-teaser__title {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.3;
     padding-bottom: 4px;
     font-weight: 300;

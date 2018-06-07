@@ -2577,7 +2577,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  color: #333; }
+  color: #222; }
 
 .content-container {
   max-width: 1320px;
@@ -3291,7 +3291,8 @@ body {
       display: block;
       border-left: 2px solid #DDD;
       border-bottom: 2px solid #DDD;
-      color: #0071AD; }
+      color: #0071AD;
+      text-decoration: none; }
       .vertical-tab .vertical-tab__title li a[aria-selected="true"] {
         background-color: #0071AD;
         color: #FFF;
@@ -3844,6 +3845,46 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     text-decoration: underline; }
+
+a.border-link-one {
+  text-decoration: none;
+  border-bottom: 1px dashed #6EA400; }
+  a.border-link-one:hover {
+    border-bottom: 2px solid #6EA400; }
+
+a.border-link-two {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px dashed #0071AD; }
+  a.border-link-two::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0071AD;
+    transition: width .3s; }
+  a.border-link-two:hover {
+    border-bottom: 1px dashed transparent;
+    color: #222; }
+    a.border-link-two:hover::after {
+      width: 100%; }
+
+a.border-link-three {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px dotted #0071AD; }
+  a.border-link-three::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #6EA400;
+    transition: width .3s; }
+  a.border-link-three:hover {
+    border-bottom: 1px dotted transparent;
+    color: #222; }
+    a.border-link-three:hover::after {
+      width: 100%; }
 
 ul.text-list {
   margin-top: 20px;
