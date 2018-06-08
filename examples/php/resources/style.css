@@ -3848,26 +3848,21 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 a.border-link-one {
   text-decoration: none;
-  border-bottom: 1px dashed #6EA400; }
+  border-bottom: 1px dashed #0071AD;
+  padding-bottom: 3px; }
   a.border-link-one:hover {
-    border-bottom: 2px solid #6EA400; }
+    border-bottom: 2px solid #0071AD; }
 
 a.border-link-two {
-  display: inline-block;
   text-decoration: none;
-  border-bottom: 1px dashed #0071AD; }
-  a.border-link-two::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #0071AD;
-    transition: width .3s; }
+  border-bottom: 1px dashed #0071AD;
+  box-shadow: inset 0 0px 0 #E8F4FA;
+  color: #0071AD;
+  padding-bottom: 3px; }
   a.border-link-two:hover {
-    border-bottom: 1px dashed transparent;
-    color: #222; }
-    a.border-link-two:hover::after {
-      width: 100%; }
+    transition: box-shadow 0.5s ease-in-out;
+    border-bottom: 2px solid #E8F4FA;
+    box-shadow: inset 0 -100px 0 #E8F4FA; }
 
 a.border-link-three {
   display: inline-block;
