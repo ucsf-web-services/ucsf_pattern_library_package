@@ -5487,10 +5487,10 @@ ul.footer-menu__links {
           .site-top-menu ul li + li {
             padding: 0 0 0 20px; } }
       .site-top-menu ul li a {
-        font-weight: 300;
         display: block;
         color: #FFF;
-        text-decoration: none; }
+        text-decoration: none;
+        letter-spacing: 0.48px; }
         .site-top-menu ul li a:hover {
           text-decoration: underline; }
       .site-top-menu ul li.first {
