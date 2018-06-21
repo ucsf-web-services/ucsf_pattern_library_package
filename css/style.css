@@ -3444,7 +3444,8 @@ body {
   .btn:hover {
     cursor: pointer;
     background-color: #FFF;
-    color: #0071AD; }
+    color: #0071AD;
+    border: 1px solid #0071AD; }
 
 .btn--light {
   background-color: #FFF;
@@ -3542,6 +3543,12 @@ textarea {
   width: 100%;
   padding: 5px;
   border-color: #D1D3D3; }
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px #0071AD;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #0071AD; }
 
 abbr[title="Required"] {
   text-decoration: none;
@@ -3850,7 +3857,10 @@ a {
   a:hover {
     border-bottom: 2px solid #0071AD; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+#footer a {
+  border-bottom-color: #FFF; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #header a, .contact-widget__social-media-links a {
   text-decoration: none;
   border-bottom: none;
   padding-bottom: 0; }
@@ -5400,7 +5410,7 @@ ul.footer-menu__links {
     .search .search-form input#edit-search-block-form--2 {
       border: none;
       border-bottom: 1px solid #525860;
-      width: 176px;
+      width: 173px;
       font-size: 15px;
       position: relative;
       font-family: "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Arial", sans-serif;
