@@ -3860,7 +3860,7 @@ a {
 #footer a {
   border-bottom-color: #FFF; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #header a, .contact-widget__social-media-links a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #header a, .contact-widget__social-media-links a, .submenu a {
   text-decoration: none;
   border-bottom: none;
   padding-bottom: 0; }
