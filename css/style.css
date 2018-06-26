@@ -3458,7 +3458,8 @@ body {
 .btn--dark-transparent {
   background-color: transparent;
   color: #FFF;
-  border: 1px solid #FFF; }
+  border: 1px solid #FFF;
+  border-bottom: 1px solid #FFF; }
   .btn--dark-transparent:hover {
     background-color: #FFF;
     color: #0071AD; }
@@ -3851,19 +3852,17 @@ body {
 }*/
 a {
   text-decoration: none;
-  border-bottom: 1px dashed #0071AD;
-  padding-bottom: 2px;
   color: #0071AD; }
   a:hover {
-    border-bottom: 2px solid #0071AD; }
+    color: #052049; }
 
 #footer a {
   border-bottom-color: #FFF; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #header a, .contact-widget__social-media-links a, .submenu a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #header a, .contact-widget__social-media-links a, .submenu a, .site-top-menu a, .tabs__item a, [class*="__image"] a, [id*="atoms-banner-"] a, [id*="-image"] a, .accordion__header a, .box a, .social-media-share a, .hero a {
   text-decoration: none;
   border-bottom: none;
-  padding-bottom: 0; }
+  text-shadow: none; }
 
 /*a.border-link-one {
   text-decoration: none;
@@ -5430,8 +5429,8 @@ ul.footer-menu__links {
     right: 0; }
   .search .fa-search:before {
     position: absolute;
-    top: 4px;
-    right: 0;
+    top: 7px;
+    right: 5px;
     padding-left: 10px;
     color: #525860;
     z-index: 10; }

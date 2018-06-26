@@ -8,7 +8,7 @@
     input#edit-search-block-form--2 {
       border: none;
       border-bottom: 1px solid $darkestgray;
-      width: 176px;
+      width: 173px;
       font-size: 15px;
       position: relative;
       font-family: $font-helvetica-neue;
@@ -32,8 +32,8 @@
   .fa-search{
     &:before {
       position: absolute;
-      top: 4px;
-      right: 0;
+      top: 7px;
+      right: 5px;
       padding-left: 10px;
       color: $darkestgray;
       z-index: 10;
