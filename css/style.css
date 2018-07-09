@@ -5407,13 +5407,19 @@ ul.footer-menu__links {
     display: inline;
     float: left; }
     .search .search-form input#edit-search-block-form--2 {
-      border: none;
+      border: 1px solid #FFF;
       border-bottom: 1px solid #525860;
       width: 173px;
       font-size: 15px;
       position: relative;
       font-family: "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Arial", sans-serif;
+      padding: 5px;
       padding-right: 30px; }
+      .search .search-form input#edit-search-block-form--2:focus {
+        border: 1px solid #0071AD;
+        margin: 0;
+        padding: 5px;
+        padding-right: 30px; }
   .search input#edit-submit--2 {
     width: 35px;
     font-size: 18px;
@@ -5429,7 +5435,7 @@ ul.footer-menu__links {
     right: 0; }
   .search .fa-search:before {
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 5px;
     padding-left: 10px;
     color: #525860;
